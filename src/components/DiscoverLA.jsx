@@ -1,26 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+const BASE = import.meta.env.BASE_URL;
+
 const rows = [
     {
         title: "From Spanish Pueblo to Global Metropolis",
         label: "Est. 1781",
         text: "On September 4, 1781, forty-four settlers — a diverse assembly of Indigenous, African, and Spanish descent — founded El Pueblo de Nuestra Señora la Reina de los Ángeles del Río Porciúncula. From that humble congregation on the banks of the Los Angeles River, a city emerged that would come to shape the imagination of the entire world.",
-        image: "/assets/olvera.png",
+        image: `${BASE}assets/olvera.png`,
         reverse: false,
     },
     {
         title: "The Capital of Dreams",
         label: "The Silver Screen",
         text: "When early filmmakers fled Edison's patent monopolies in the East and arrived in the sun-drenched foothills of Hollywood in the 1910s, they did not merely build an industry — they constructed a mythology. The Hollywood Sign, erected in 1923 as a real estate advertisement for \"Hollywoodland,\" became an accidental monument to aspiration itself.",
-        image: "/assets/hero.png",
+        image: `${BASE}assets/hero.png`,
         reverse: true,
     },
     {
         title: "Where Art Meets the Horizon",
         label: "The Living Canvas",
         text: "The cultural landscape of Los Angeles stretches from the ancient to the avant-garde. Frank Gehry's Walt Disney Concert Hall catches the California sun in billowing steel, a cathedral of sound that redefined what architecture could be. The Broad museum houses masterworks of contemporary art behind a honeycomb facade they call \"the veil and the vault.\"",
-        image: "/assets/disney_hall.png",
+        image: `${BASE}assets/disney_hall.png`,
         reverse: false,
     },
 ];

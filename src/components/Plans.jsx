@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const BASE = import.meta.env.BASE_URL;
+
 const plans = [
     {
         id: 1,
@@ -8,7 +10,7 @@ const plans = [
         price: "$1,000",
         days: "1 Day",
         desc: "A sun-drenched pilgrimage along the Pacific shore — from the storied timbers of Santa Monica Pier to the bohemian canals of Venice",
-        image: "/assets/plan1.png",
+        image: `${BASE}assets/plan1.png`,
         color: "var(--color-sunset-orange)",
         location: "Santa Monica Pier",
         time: "6:30 PM",
@@ -41,7 +43,7 @@ const plans = [
         price: "$3,000",
         days: "2 Days",
         desc: "An intimate passage through the mythology of Hollywood — from the gilded stages where Oscar legends are crowned to the sun-kissed heights of the Getty",
-        image: "/assets/plan2.png",
+        image: `${BASE}assets/plan2.png`,
         color: "var(--color-ocean-blue)",
         location: "Hollywood Boulevard",
         time: "1:00 PM",
@@ -87,7 +89,7 @@ const plans = [
         price: "$5,000",
         days: "3 Days",
         desc: "A three-day immersion in the cultural renaissance of Downtown LA — where century-old landmarks meet the cutting edge of contemporary art, architecture, and cuisine",
-        image: "/assets/plan3.png",
+        image: `${BASE}assets/plan3.png`,
         color: "#9C27B0",
         location: "DTLA Skyline",
         time: "8:00 PM",

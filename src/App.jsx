@@ -73,7 +73,7 @@ function App() {
             {/* Footer */}
             <footer className="site-footer" style={{ textAlign: 'center', padding: '4rem 2rem', color: 'var(--color-sand-beige)', opacity: 0.8 }}>
                 <div style={{ marginBottom: '1.5rem', opacity: 0.9 }}>
-                    <img src="/assets/logo.svg" alt="Saro Travel Logo" style={{ width: '120px' }} />
+                    <img src={`${import.meta.env.BASE_URL}assets/logo.svg`} alt="Saro Travel Logo" style={{ width: '120px' }} />
                 </div>
                 <div className="footer-ornament">
                     <div className="ornament-line" />

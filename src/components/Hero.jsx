@@ -1,11 +1,13 @@
 import React, { useRef, useMemo, useState, useEffect, useCallback } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 
+const BASE = import.meta.env.BASE_URL;
+
 const SLIDES = [
-    { image: '/assets/hero.png', location: 'Hollywood Hills', time: '6:45 PM' },
-    { image: '/assets/plan1.png', location: 'Santa Monica Pier', time: '5:30 PM' },
-    { image: '/assets/plan2.png', location: 'Downtown LA', time: '8:00 PM' },
-    { image: '/assets/plan3.png', location: 'Beverly Hills', time: '4:20 PM' },
+    { image: `${BASE}assets/hero.png`, location: 'Hollywood Hills', time: '6:45 PM' },
+    { image: `${BASE}assets/plan1.png`, location: 'Santa Monica Pier', time: '5:30 PM' },
+    { image: `${BASE}assets/plan2.png`, location: 'Downtown LA', time: '8:00 PM' },
+    { image: `${BASE}assets/plan3.png`, location: 'Beverly Hills', time: '4:20 PM' },
 ];
 
 const STATS = [
@@ -161,7 +163,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 2.8 }}
                 style={{ position: 'absolute', top: '2rem', left: '2rem', zIndex: 100, width: '160px' }}
             >
-                <img src="/assets/logo.svg" alt="Saro Travel Logo" style={{ width: '100%' }} />
+                <img src={`${BASE}assets/logo.svg`} alt="Saro Travel Logo" style={{ width: '100%' }} />
             </motion.div>
 
             {/* Coordinates */}
